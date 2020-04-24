@@ -1,0 +1,7 @@
+# OAuth Token
+app_name: Personal
+app_type: Dedicated
+app_token: ################
+app_secret: ################################
+access_token: ################################
+access_token_secret: ################################
