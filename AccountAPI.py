@@ -52,10 +52,9 @@ class AccountAPI():
         except mkmsdk.exceptions.ConnectionError:
             print("Something went wrong.")
 
-    def update_stock_prices(self):
-        stock = self.get_entire_stock()
+    def update_stock_prices(self, stock_list):
 
-        for article in stock["article"]:
+        for article in stock_list:
             price = self.get_product_avg_price(article["idProduct"])
             if price > 5:
                 new_price = price - .10
@@ -66,16 +65,8 @@ class AccountAPI():
                     'comments': article['comments'],
                     'count': article['count'],
                     'price': new_price,
-                    'condition': article['condition'],
-                    'isFoil': False,
-                    'isSigned': False,
-                    'isPlayset': False}
+                    'condition': article['condition']}
 
             self.mkm.stock_management.change_articles(data={"article": [data]})
 
-def main():
-    aapi= AccountAPI("token_config.yml")
-    aapi.update_stock_prices()
 
-if __name__ == "__main__":
-    main()
