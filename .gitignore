@@ -1,2 +1,5 @@
 # config files
 token_config.yml
+
+# IDE
+.idea
