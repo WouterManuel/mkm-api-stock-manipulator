@@ -1,5 +1,5 @@
 # config files
-token_config.yml
+configs/token_config.yml
 
 # IDE
 .idea
