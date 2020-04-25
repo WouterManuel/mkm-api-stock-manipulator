@@ -1,7 +1,7 @@
 # Introduction
 This small Python application has been designed to interact with https://www.cardmarket.com/en/Magic API, using the mkmsdk library.
 
-I've always had the problem of never finding an easy way to update my listed cards prices on cardmarket.com automatically. And having +500 cards listed, manually changing the price was incredibly tedious. So, I figured I'd give the API a try to update the prices automatically. 
+I've always had the problem of never finding an easy way to update my listed cards prices on cardmarket.com automatically, and having +500 cards listed manually changing the price was incredibly tedious. So, I figured I'd give the MKM API a try to update stockprices automatically according to current price trends. 
 
 This application is only meant for dedicated app tokens.
 
