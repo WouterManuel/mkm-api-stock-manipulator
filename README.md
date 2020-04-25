@@ -14,7 +14,7 @@ This application is only meant for dedicated app tokens.
 
 # How to use
 First create a token for your magic cardmarket account. 
-Go to Home -> Account -> API Settings and generate a new Dedicated App token. 
+Go to **Home -> Account -> API Settings** and generate a new Dedicated App token. 
 
 Next, create a new file called "token_config.yml" in the mlm-api-stock-manipulator folder. 
 Copy the content in the example_config.yml file and fill in the blanks with your generated token details.
